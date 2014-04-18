@@ -1,0 +1,60 @@
+head
+	link(rel="stylesheet", href="/stylesheets/bootstrap.css")
+	link(rel="stylesheet", href="/stylesheets/app.css")
+
+	script(type="text/javascript", src="/scripts/jquery-2.0.3.js")
+	script(type="text/javascript", src="/scripts/bootstrap.js")
+
+
+body(cz-shortcut-listen="true")
+	.navbar.navbar-default.navbar-fixed-top
+		.container
+			.navbar-header
+				a.navbar-brand(href="#") Tree
+			.navbar-collapse.collapse
+				ul.nav.navbar-nav
+					li
+						a(href="/nosotros") Nosotros
+					li
+						a(href="/services") Servicios
+					li
+						a(href="/contacto") Contacto
+
+	.container.container-main
+		.jumbotron
+			h1 Tree Arboricultura
+			p This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
+			p
+				a.btn.btn-primary.btn-lg(href="#",role="button") Conocenos
+
+	.container.marketing
+		.row
+			.col-lg-4
+				img.img-circle(data-src="holder.js/140x140", alt="140x140", src="http://lorempixel.com/140/140/")
+				h2 Heading
+				p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+				p 
+				a.btn.btn-default(href="#" role="button") +INFO
+			.col-lg-4
+				img.img-circle(data-src="holder.js/140x140", alt="140x140", src="http://lorempixel.com/140/140/")
+				h2 Heading
+				p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+				p 
+				a.btn.btn-default(href="#" role="button") +INFO
+			.col-lg-4
+				img.img-circle(data-src="holder.js/140x140", alt="140x140", src="http://lorempixel.com/140/140/")
+				h2 Heading
+				p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+				p 
+				a.btn.btn-default(href="#" role="button") +INFO
+
+		hr.featurette-divider
+
+		footer
+			p.pull-right
+				a(href="#") Subir
+			p Tree Arboricultura &copy;
+				a(href="#") Home
+				a(href="/nosotros") Nosotros
+				a(href="/servicios") Servicios
+				a(href="/contacto") Contacto

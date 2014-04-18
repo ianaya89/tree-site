@@ -1,0 +1,67 @@
+head
+	link(rel="stylesheet", href="/stylesheets/bootstrap.css")
+	link(rel="stylesheet", href="/stylesheets/app.css")
+
+	script(type="text/javascript", src="/scripts/jquery-2.0.3.js")
+	script(type="text/javascript", src="/scripts/bootstrap.js")
+
+
+body(cz-shortcut-listen="true")
+	.navbar.navbar-default.navbar-fixed-top
+		.container
+			.navbar-header
+				a.navbar-brand(href="#") Tree
+			.navbar-collapse.collapse
+				ul.nav.navbar-nav
+					li
+						a(href="/nosotros") Nosotros
+					li.active
+						a(href="#") Servicios
+					li
+						a(href="/contacto") Contacto
+
+	.container
+		.row
+			.col-lg-12
+				h1.page-hader Nosotros
+				ol.breadcrumb
+					li
+						a(href="/home") Home
+					li.active	
+						a Servicios
+
+		.row
+			.col-lg-12
+				h2.page-hader Nuestros Servicios
+			.col-sm-6
+				img.img-responsive(src="http://lorempixel.com/750/450/")		
+				h3 Consultoría en Arboricultura
+				ul	
+					li Censos, diagnóstico  y planificación de arbolado.
+					li Manejo y gestión de arbolado.
+					li Diagnóstico y tratamiento de desórdenes: plagas, enfermedades, problemas ambientales.
+					li Estudios y análisis de valoración de riesgo en árboles, tanto visual como instrumental (Resistógrafo).
+					li Cursos de capacitación y entrenamiento.
+					li Asesoramiento.
+			.col-sm-6
+				img.img-responsive(src="http://lorempixel.com/750/450/")		
+				h3 Servicios
+				ul	
+					li Poda y tala de árboles.
+					li Anclajes.
+					li Trasplantes.
+					li Tratamientos sanitarios: por suelo, microinyección en tronco, pulverización.
+					li Tratamientos para mejorar la física del suelo: mulching vertical, recambio parcial del suelo sin daño de raíces con  Air spade.
+					li Tratamientos de fertilización y corrección de PH del suelo.		
+									
+
+		hr.featurette-divider
+
+		footer
+			p.pull-right
+				a(href="#") Subir
+			p Tree Arboricultura &copy;
+				a(href="/home") Home
+				a(href="/nosotros") Nosotros
+				a(href="/#") Servicios
+				a(href="/contacto") Contacto
