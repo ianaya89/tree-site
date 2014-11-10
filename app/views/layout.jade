@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width')
+    title= title
+    link(rel='shortcut icon', href='/img/tree-sq.png')
+    block css
+      link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
+      link(rel='stylesheet', href='/components/bootstrap/dist/css/bootstrap.flatly.min.css')
+      link(rel='stylesheet', href='/css/style.css')
+  body
+    header
+      nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+        div.container-fluid
+          div.navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Menu
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.nav-logo.text-center.visible-xs(href='/')
+              img#logo(alt='Tree', title='Tree', src='img/tree.png')
+          div#navbar.navbar-collapse.collapse.navbar-responsive-collapse
+            ul.nav.navbar-nav
+              li.nav-logo.hidden-xs
+                a(href='/')
+                  img#logo(alt='Tree', title='Tree', src='img/tree-sq.png', height='32', width='32')
+                  | TREE
+              li
+                a(href='/about') Nosotros
+              li
+                a(href='/services') Servicios
+              li
+                a(href='#') Blog
+              li
+                a(href='/contact') Contacto
+            //- form.navbar-form.navbar-right
+            //-   input.form-control.col-lg-8(type='text' placeholder='Buscar...')
+
+    div.container
+      block content
+
+      hr
+
+      footer
+        .row
+          .col-xs-12.col-md-6
+            p Tree Arboricultura &copy;
+              a(href='/') Home
+              a(href='/nosotros') Nosotros
+              a(href='/servicios') Servicios
+              a(href='/servicios') Blog
+              a(href='/contacto') Contacto
+          .col-xs-12.col-md-3
+            p.pull-right
+              a(href='#')
+                i.fa.fa-linkedin
+              a(href='#')
+                i.fa.fa-twitter
+              a(href='#')
+                i.fa.fa-google-plus
+              a(href='#')
+                i.fa.fa-youtube
+              a(href='#')
+                i.fa.fa-envelope
+              a(href='#')
+                i.fa.fa-skype
+          .col-xs-12.col-md-3
+            p.pull-right
+              a(href='#')
+                i.fa.fa-arrow-circle-up.fa-3
+
+
+    script(src='http://localhost:35729/livereload.js')
+    script(src='/components/jquery/dist/jquery.min.js')
+    script(src='/components/bootstrap/dist/js/bootstrap.min.js')
+    block js

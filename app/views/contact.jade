@@ -1,0 +1,64 @@
+extends layout
+
+block content
+  .row
+    .col-xs-12
+      ol.breadcrumb
+        li
+          a(href='/') Inicio
+        li.active(href='#') Contacto
+
+   .row
+     .col-xs-12
+       h1.page-hader Contactános
+
+  .row
+    .col-xs-12.col-md-8
+      h3 Dejanos tu consulta
+      h4 Te contactaremos a la brevedad.
+
+      form
+        .row
+          .col-xs-12.col-md-4.form-group
+            input#txtName.form-control(type='text', placeholder='Nombre *')
+          .col-xs-12.col-md-4.form-group
+            input#txtEmail.form-control(type='email', placeholder='Email *')
+          .col-xs-12.col-md-4.form-group
+            input#txtSubject.form-control(type='text', placeholder='Asunto *')
+        .row
+          .col-xs-12.form-group
+            textarea#txtMessage.form-control(placeholder='Mensaje *', rows='6')
+        .row.form-group
+          .col-xs-12.text-left
+            button#btnSubmit.btn.btn-success(type='button') Enviar
+
+    .col-xs-12.col-md-4
+      h3 Tree Arboricultura
+      h5 J. B. Alberdi 227 - Ciudad de Buenos Aires, Argentina.
+      h5
+        a(href='tel:+54 11 4901 9868')
+          i.fa.fa-phone
+          |  +54 11 4901 9868
+      h5
+        a(href='tel:+54 9 11 4986 0834')
+          i.fa.fa-mobile
+          |  +54 9 11 4986 0834
+      h5
+        a(href='mailto:info@tree-ar.com')
+          i.fa.fa-envelope
+          |  info@tree-ar.com
+
+    #succesModal.modal
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+            .modal-title
+              h4 Su consulta ha sido enviada.
+          .modal-body
+            p Su consulta sera contestada a la brevedad.
+          .modal-footer
+            button.btn.btn-success(type='button', data-dismiss='modal') Cerrar
+
+block js
+  script(src='js/contact.js')

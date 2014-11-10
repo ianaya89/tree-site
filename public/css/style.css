@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Rockwell';
+  src: url('../fonts/Rockwell-Std.ttf');
+}
+
+@font-face {
+  font-family: 'Century';
+  src: url('../fonts/Century-bold.otf');
+}
+
+h1 {
+  font-family: 'Rockwell';
+}
+
+h2 {
+  font-family: 'Century';
+  font-size: 42px;
+}
+
+h3 {
+  font-family: 'Rockwell';
+  font-weight: bold;
+}
+
+h1.tree {
+  font-size: 150px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2.tree {
+  font-size: 80px;
+  text-align: center;
+}
+
+i.fa-6 {
+  font-size: 16.2em;
+}
+
+i.fa-3 {
+  font-size: 3.2em;
+}
+
+.jumbotron {
+  background-color: #f3f3f3;
+  color: #322d2d;
+}
+
+footer p a {
+  margin-left: 10px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+ul.nav.navbar-nav li{
+  margin-top: 4px;
+}
+
+ul.nav.navbar-nav li.nav-logo {
+  margin-top: 0;
+}
+
+.navbar-header a.nav-logo, ul.nav.navbar-nav li.nav-logo a{
+  color: #322d2d;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.navbar-header a.nav-logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.navbar-header a.nav-logo span {
+  margin-left: 10px;
+}
+
+.navbar-header a.nav-logo img {
+  width: 30%;
+  margin: 5px;
+}
+
+.navbar-header a.nav-logo{
+  font-family: 'Rockwell';
+}
+
+ul.nav.navbar-nav li a {
+  font-size: 20px;
+  text-shadow: 1px 1px #322d2d;
+  font-family: 'Rockwell';
+}
+
+ul.nav.navbar-nav li a:hover {
+  text-decoration: underline;
+  color: #f3f3f3;
+}
+
+ul.nav.navbar-nav li a img{
+  margin-right: 8px;
+  margin-top: -5px;
+}
+
+footer p a {
+  font-family: 'Rockwell';
+}
+
+span.tree {
+  font-family: 'Rockwell';
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+
+span.tree:before {
+  font-family: 'Rockwell';
+  content: 'TREE';
+}
+
+span.ar {
+  font-family: 'Century';
+  font-size: 20px;
+}
+
+span.ar:before {
+  content: ' arboricultura ';
+}
