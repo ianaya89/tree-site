@@ -129,3 +129,13 @@ span.ar {
 span.ar:before {
   content: ' arboricultura ';
 }
+
+input.error, textarea.error {
+  border: 3px #e74c3c solid;
+}
+
+small.error {
+ color: #e74c3c;
+ margin-top: 0;
+ margin-bottom: 20px;
+}
