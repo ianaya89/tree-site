@@ -6,7 +6,7 @@ module.exports = function (app) {
 };
 
 router.get(['/', '/index', '/home'], function (req, res, next) {
-    res.render('under', {
+    res.render('home', {
       title: 'TREE Arboricultura | Inicio'
     });
 });

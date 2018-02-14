@@ -14,7 +14,7 @@ module.exports = function (app) {
 };
 
 router.get(['/'], function (req, res, next) {
-    res.render('under', {
+    res.render('contact', {
       title: 'TREE Arboricultura | Contacto'
     });
 });
